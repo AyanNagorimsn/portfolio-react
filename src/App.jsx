@@ -1,6 +1,6 @@
 import "./App.scss";
 
-import { About, Footer, Header, Skills, Work } from "./container";
+import { Header } from "./container";
 import { Navbar } from "./components";
 
 const App = () => {
