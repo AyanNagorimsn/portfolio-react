@@ -20,7 +20,7 @@
   flex: 1;
   height: 100%;
   width: 100%;
-  justify-content: space-between !important;
+  justify-content: space-between;
   flex-direction: row;
   padding: 6rem 2rem 0;
 
@@ -43,7 +43,7 @@
   justify-content: flex-start;
   height: 100%;
   @media screen and (max-width: 450px) {
-    width: 100% !important;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -51,7 +51,7 @@
 }
 
 .app__header-badge {
-  width: 100% !important;
+  width: 100%;
   display: flex;
 
   align-items: flex-end;
@@ -74,7 +74,7 @@
     }
   }
   .tag-cmp {
-    flex-direction: column !important;
+    flex-direction: column;
     margin-top: 3rem;
 
     p {
@@ -129,7 +129,7 @@
   }
 
   @media screen and (max-width: 1200px) {
-    margin-top: 16rem !important;
+    margin-top: 16rem;
   }
 
   @media screen and (min-width: 2000px) {
@@ -162,19 +162,19 @@
 }
 
 .app__header-img {
-  height: 100% !important;
-  width: 50% !important;
+  height: 100%;
+  width: 50%;
   position: absolute;
   top: 50%;
   left: 50%;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  transform: translate(-50%, -50%) !important;
-  -webkit-transform: translate(-50%, -50%) !important;
-  -moz-transform: translate(-50%, -50%) !important;
-  -ms-transform: translate(-50%, -50%) !important;
-  -o-transform: translate(-50%, -50%) !important;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
   ////
   img {
     width: 220px;
@@ -183,11 +183,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -26%);
-    -webkit-transform: translate(-50%, -26%);
-    -moz-transform: translate(-50%, -26%);
-    -ms-transform: translate(-50%, -26%);
-    -o-transform: translate(-50%, -26%);
+    transform: translate(-50%, 0px);
   }
 
   @media screen and (max-width: 1200px) {

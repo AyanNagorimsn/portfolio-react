@@ -1,10 +1,16 @@
 import React, { useRef, useEffect } from "react";
-import { motion, useScroll } from "framer-motion";
+import { motion } from "framer-motion";
 import { images } from "../../constants";
 
 import { AppWrap } from "../../wrapper";
 
 import "./Header.scss";
+
+/*\
+import { motion, useScroll } from "framer-motion"
+
+function Component() {
+*/
 
 const scaleVariants = {
   whileInView: {
@@ -23,7 +29,7 @@ const Header = () => {
   useEffect(() => {
     window.addEventListener("scroll", (e) => {
       firstImage.current.style.transform = `translate(-50% ,-${
-        window.pageYOffset * 1.5
+        window.scrollY * 1.5
       }px)`;
     });
   }, []);
