@@ -28,9 +28,8 @@
     margin: 1rem 0;
     padding: 1rem;
     border-radius: 10px;
-    cursor: pointer;
+    cursor: copy;
     background-color: #fef4f5;
-
     transition: all 0.3s ease-in-out;
 
     img {
@@ -63,7 +62,7 @@
       color: #555;
       background: #fff;
       padding: 0.2rem 0.6rem;
-      border-radius: 1.5rem;
+      border-bottom-left-radius: 20px;
 
       @media screen and (min-width: 768px) {
         display: none;

@@ -23,6 +23,7 @@ const Footer = () => {
 
     // add particle
     let lottie = parentDiv.children[2];
+    lottie.play();
 
     // toggle between info to text copied
     ptags.forEach((el) => el.classList.add("active"));
@@ -34,7 +35,7 @@ const Footer = () => {
       ptags.forEach((el) => el.classList.remove("active"));
 
       parentDiv.style.pointerEvents = "all";
-      // lottie.stop();
+      lottie.stop();
     }, 2500);
   };
 
@@ -64,9 +65,12 @@ const Footer = () => {
               </h6>
 
               <lottie-player
-                src="https://assets9.lottiefiles.com/packages/lf20_ahrbr631.json"
-                background="transparent"
-                speed="2"
+                src="https://lottie.host/ba5f1b29-c134-49e6-92a5-0c3c0138ac41/1fZfylyQsU.json"
+                style={{
+                  height: "100%",
+                  width: "100%",
+                  transform: "scale(2.6) translateX(-50px)",
+                }}
               ></lottie-player>
 
               <h4>COPY</h4>
