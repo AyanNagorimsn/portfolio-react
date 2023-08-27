@@ -77,11 +77,15 @@
   align-items: center;
   justify-content: center;
 
+  & svg {
+    fill: white;
+    scale: 1.2;
+  }
+
   .app__navbar-list {
     position: fixed;
     top: 0;
     right: -102%;
-
     padding: 1rem;
 
     width: 80vw;
@@ -104,9 +108,9 @@
     }
 
     & > svg {
-      fill: var(--white-color) !important;
-      width: 75%;
-      height: 75%;
+      fill: unset;
+      width: 40px;
+      height: 40px;
     }
 
     ul {

@@ -33,7 +33,6 @@
     transition: all 0.3s ease-in-out;
 
     img {
-      z-index: 999;
       width: 40px;
       height: 40px;
       margin: 0 0.7rem;
@@ -194,5 +193,5 @@ lottie-player {
   transform: translateX(-50%);
   width: 200px;
   height: 240px;
-  z-index: 99;
+  z-index: 6;
 }

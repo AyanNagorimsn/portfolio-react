@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { HiMenuAlt4, HiX } from "react-icons/hi";
 import "./Navbar.scss";
 import { images } from "../../constants";
+import { color } from "framer-motion";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
