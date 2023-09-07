@@ -4,8 +4,16 @@ export const data = [
     description: `This is my first, old and really simple portfolio. Made from static Html and Css. Inspiration is taken from a WIX template and I made design by myslef in figma. `,
     projectLink: `https://weadher.vercel.app/`,
     codeLink: "https://github.com/ParallelXL/weather-app",
-    tags: [`All`, `UI/UX`, `Web App`],
+    tags: [`All`, `Web App`],
     imgname: `weather`,
+  },
+  {
+    title: `Saleslancer`,
+    description: `Simple landing page website inspired by a dribbble shot by DS Studio. Added animation and dark mode for a bit of personal touch.`,
+    projectLink: `https://saleslancer-landing-page.vercel.app/`,
+    codeLink: "https://github.com/ParallelXL/Landing-page-UI",
+    tags: [`All`, `UI/UX`],
+    imgname: `saleslancer`,
   },
   {
     title: `Old Portfolio`,
@@ -20,7 +28,7 @@ export const data = [
     description: `This is a website I create for my first client. Which I get When I was Freelancing on truelancer.com, the design is quite similar to stripe.com. Made from static Html and Css`,
     projectLink: `https://logify.id`,
     codeLink: "https://github.com/ParallelXL/logify-website",
-    tags: [`All`, `UI/UX`],
+    tags: [`All`],
     imgname: `logify`,
   },
   {
@@ -44,7 +52,7 @@ export const data = [
     description: `This is a 2 player javascript game. The goal is to make 100 points before your opponent player. And that by Rolling dice. If the dice number is 1 then you will lose your all your current points.`,
     projectLink: `https://pick-game.vercel.app/`,
     codeLink: `https://github.com/ParallelXL/Pick-Game-Javascript`,
-    tags: [`All`, `UI/UX`, `Javascript Project`],
+    tags: [`All`, `Javascript Project`],
     imgname: `pickgame`,
   },
 ];

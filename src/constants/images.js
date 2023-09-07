@@ -23,8 +23,10 @@ import logify from "../assets/logify.png";
 import oldportfolio from "../assets/oldportfolio.png";
 import guessthenum from "../assets/guessthenum.png";
 import weather from "../assets/weather.png";
+import saleslancer from "../assets/saleslancer.png";
 
 export default {
+  saleslancer,
   weather,
   bankist,
   pickgame,
