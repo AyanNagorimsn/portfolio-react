@@ -1,6 +1,8 @@
+import React, { useRef } from "react";
 import { images } from "../../constants";
 import { AppWrap } from "../../wrapper";
 import { Tooltip as ReactTooltip } from "react-tooltip";
+import emailjs from "@emailjs/browser";
 
 import "./Footer.scss";
 
@@ -37,6 +39,30 @@ const Footer = () => {
       parentDiv.style.pointerEvents = "all";
       lottie.stop();
     }, 2500);
+  };
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_08e1xne",
+        "template_sep0juh",
+        form.current,
+        "U_tYrZipx3KkdmfHb"
+      )
+      .then(
+        (result) => {
+          console.log(result);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+
+    e.target.reset();
   };
 
   return (
@@ -82,13 +108,18 @@ const Footer = () => {
           id="tooltip"
         ></ReactTooltip>
       </div>
-      <form method="POST" className="app__footer-form app__flex">
+
+      <form
+        ref={form}
+        onSubmit={sendEmail}
+        className="app__footer-form app__flex"
+      >
         <div className="app__flex">
           <input
             className="p-text"
             type="text"
             placeholder="Your Name"
-            name="name"
+            name="from_name"
           />
         </div>
         <div className="app__flex">
@@ -96,7 +127,7 @@ const Footer = () => {
             className="p-text"
             type="email"
             placeholder="Your Email"
-            name="email"
+            name="from_email"
           />
         </div>
         <div>
@@ -115,4 +146,4 @@ const Footer = () => {
   );
 };
 
-export default AppWrap(Footer, "contact", "app__footer");
+export default Footer;
