@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { AppWrap } from "../../wrapper";
 import { images } from "../../constants";
 import { data } from "../../data/work-data";
+import { hackerEffect } from "../../constants";
 
 import "./Work.scss";
 
@@ -31,8 +32,17 @@ const Work = () => {
 
   return (
     <>
-      <h2 className="head-text">
-        My creative <span>Portfolio</span> section
+      <h2 className="head-text hacker-effect">
+        My creative{" "}
+        <span
+          data-text="Portfolio"
+          onMouseOver={(e) => {
+            hackerEffect(e);
+          }}
+        >
+          Portfolio
+        </span>{" "}
+        section
       </h2>
 
       <div className="app__work-filter">

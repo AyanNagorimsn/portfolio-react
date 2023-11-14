@@ -66,7 +66,7 @@ const Footer = () => {
   };
 
   return (
-    <>
+    <div id="contact">
       <h2 className="head-text">Take a coffee & chat with me</h2>
 
       <div className="app__footer-cards">
@@ -142,7 +142,9 @@ const Footer = () => {
           Send message
         </button>
       </form>
-    </>
+
+      <p className="copyright">Created by Ayan Nagori with 💖 @2023</p>
+    </div>
   );
 };
 

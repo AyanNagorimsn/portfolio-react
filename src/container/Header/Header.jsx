@@ -2,6 +2,8 @@ import React, { useRef, useEffect } from "react";
 import { motion } from "framer-motion";
 import { images } from "../../constants";
 
+import { hackerEffect } from "../../constants";
+
 import { AppWrap } from "../../wrapper";
 
 import "./Header.scss";
@@ -25,6 +27,8 @@ const scaleVariants = {
 
 const Header = () => {
   const firstImage = useRef();
+  const name = useRef();
+  const heading = useRef();
 
   useEffect(() => {
     window.addEventListener("scroll", (e) => {
@@ -42,11 +46,18 @@ const Header = () => {
         transition={{ duration: 0.5, delay: 0.2 }}
       >
         <div className="app__header-badge">
-          <div className="badge-cmp app-flex">
+          <div
+            className="badge-cmp app-flex"
+            onMouseOver={() => hackerEffect(name)}
+          >
             <span>👋</span>
             <div style={{ marginLeft: 20 }}>
-              <p className="p-text">Hello, I'am</p>
-              <h1 className="head-text">Ayan</h1>
+              <p className="p-text" ref={heading}>
+                Hello, I'am
+              </p>
+              <h1 className="head-text" ref={name} data-text="Ayan">
+                Ayan
+              </h1>
             </div>
           </div>
 
