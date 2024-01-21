@@ -46,26 +46,18 @@ const Work = () => {
       </h2>
 
       <div className="app__work-filter">
-        {["All", "UI/UX", "Web App", "Javascript Project", "React JS"].map(
-          (item, index) => (
-            <div
-              key={index}
-              onClick={() => handleWorkFilter(item)}
-              className={`app__work-filter-item app__flex p-text ${
-                activeFilter === item ? "item-active" : ""
-              }`}
-            >
-              {item}
-            </div>
-          )
-        )}
+        {["All", "Best", "Dynamic", "Static"].map((item, index) => (
+          <div
+            key={index}
+            onClick={() => handleWorkFilter(item)}
+            className={`app__work-filter-item app__flex p-text ${activeFilter === item ? "item-active" : ""}`}
+          >
+            {item}
+          </div>
+        ))}
       </div>
 
-      <motion.div
-        animate={animateCard}
-        transition={{ duration: 0.5, delayChildren: 0.5 }}
-        className="app__work-portfolio"
-      >
+      <motion.div animate={animateCard} transition={{ duration: 0.5, delayChildren: 0.5 }} className="app__work-portfolio">
         {filterWork.map((work, index) => (
           <div className="app__work-item app__flex" key={index}>
             <div className="app__work-img">
@@ -113,10 +105,8 @@ const Work = () => {
                 {work.description}
               </p>
 
-              <div className="app__work-tag app__flex">
-                <p className="p-text">
-                  {work.tags.length > 1 ? work.tags[1] : work.tags[0]}
-                </p>
+              <div className={`app__work-tag app__flex ${work.tags?.[1] === "Best" ? "highlight" : ""}`}>
+                <p className="p-text">{work.tags.length > 1 ? work.tags[1] : work.tags[0]}</p>
               </div>
             </div>
           </div>

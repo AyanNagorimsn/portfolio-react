@@ -31,6 +31,8 @@
   .item-active {
     background-color: var(--secondary-color);
     color: #fff;
+    transform: scale(1.02) translateY(-3px);
+    box-shadow: 5px 2px 20px rgba(0, 0, 0, 0.4);
   }
 }
 
@@ -134,7 +136,25 @@
     position: absolute;
     padding: 0.5rem 1rem;
     border-radius: 10px;
-    background-color: #fff;
+    background-color: #fafafa;
     top: -25px;
+
+    &.highlight {
+      color: white;
+      font-weight: 600;
+      background: linear-gradient(45deg, #f17c58, #e94584, #24aadb, #27dbb1, #ffdc18, #ff3706);
+      background-size: 600% 100%;
+      animation: gradient 7s linear infinite;
+      animation-direction: alternate;
+    }
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 100%;
   }
 }

@@ -4,17 +4,14 @@ import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { AppWrap } from "../../wrapper";
 import { data } from "../../data/skills-data";
-import { Edata } from "../../data/experience-data";
 import { images } from "../../constants";
 import "./Skills.scss";
 
 const Skills = () => {
-  const [experiences, setExperiences] = useState([]);
   const [skills, setSkills] = useState([]);
 
   useEffect(() => {
     setSkills(data);
-    setExperiences(Edata);
   }, []);
 
   return (
@@ -30,10 +27,7 @@ const Skills = () => {
               className="app__skills-item app__flex"
               key={skill.name}
             >
-              <div
-                className="app__flex"
-                style={{ backgroundColor: skill.bgColor }}
-              >
+              <div className="app__flex" style={{ backgroundColor: skill.bgColor }}>
                 <img src={images[skill.name]} alt={skill.name} />
               </div>
               <p className="p-text">{skill.name}</p>

@@ -1,10 +1,20 @@
+// {["All", "Best", "Dynamic", "Static"].map((item, index) => (
+
 export const data = [
+  {
+    title: `Epic Legion`,
+    description: `Contributed in this Animated website made by an amazing Team of devs I found on a discord server. It is a website showcasing minecraft modpacks by Mark fetched from modrinth and curseforge api`,
+    projectLink: `https://weadher.vercel.app/`,
+    codeLink: "https://github.com/ParallelXL/weather-app",
+    tags: [`All`, `Best`, `Dynamic`],
+    imgname: `epiclegion`,
+  },
   {
     title: `Weather App`,
     description: `This is my first, old and really simple portfolio. Made from static Html and Css. Inspiration is taken from a WIX template and I made design by myslef in figma. `,
     projectLink: `https://weadher.vercel.app/`,
     codeLink: "https://github.com/ParallelXL/weather-app",
-    tags: [`All`, `Web App`],
+    tags: [`All`, `Best`, `Dynamic`],
     imgname: `weather`,
   },
   {
@@ -12,7 +22,7 @@ export const data = [
     description: `Simple landing page website inspired by a dribbble shot by DS Studio. Added animation and dark mode for a bit of personal touch.`,
     projectLink: `https://saleslancer-landing-page.vercel.app/`,
     codeLink: "https://github.com/ParallelXL/Landing-page-UI",
-    tags: [`All`, `UI/UX`],
+    tags: [`All`, `Static`],
     imgname: `saleslancer`,
   },
   {
@@ -20,7 +30,7 @@ export const data = [
     description: `This is my first, old and really simple portfolio. Made from static Html and Css. Inspiration is taken from a WIX template and I made design by myslef in figma. `,
     projectLink: `https://ayannagori-oldfolio.vercel.app`,
     codeLink: "https://github.com/ParallelXL/old-portfolio",
-    tags: [`All`, `UI/UX`],
+    tags: [`All`, `Static`],
     imgname: `oldportfolio`,
   },
   {
@@ -28,7 +38,7 @@ export const data = [
     description: `This is a website I create for my first client. Which I get When I was Freelancing on truelancer.com, the design is quite similar to stripe.com. Made from static Html and Css`,
     projectLink: `https://logify.id`,
     codeLink: "https://github.com/ParallelXL/logify-website",
-    tags: [`All`],
+    tags: [`All`, `Static`],
     imgname: `logify`,
   },
   {
@@ -36,7 +46,7 @@ export const data = [
     description: `This is a minimal finance themes website. I made this when I was learning a course from udemy. the course and design is by jonasschmedtmann.`,
     projectLink: `https://minimal-bankist.vercel.app/`,
     codeLink: `https://github.com/ParallelXL/bankist-website`,
-    tags: [`All`, `UI/UX`],
+    tags: [`All`, `Static`],
     imgname: `bankist`,
   },
   {
@@ -44,7 +54,7 @@ export const data = [
     description: `This is a javascript game in which the player has to guess the number which is randomly generated between 1 to 20. the course and design is by jonasschmedtmann.`,
     projectLink: `https://mysterydigit.vercel.app/`,
     codeLink: `https://github.com/ParallelXL/Guess-The-Number`,
-    tags: [`All`, `Javascript Project`],
+    tags: [`All`, `Dynamic`],
     imgname: `guessthenum`,
   },
   {
@@ -52,7 +62,7 @@ export const data = [
     description: `This is a 2 player javascript game. The goal is to make 100 points before your opponent player. And that by Rolling dice. If the dice number is 1 then you will lose your all your current points.`,
     projectLink: `https://pick-game.vercel.app/`,
     codeLink: `https://github.com/ParallelXL/Pick-Game-Javascript`,
-    tags: [`All`, `Javascript Project`],
+    tags: [`All`, `Dynamic`],
     imgname: `pickgame`,
   },
 ];
