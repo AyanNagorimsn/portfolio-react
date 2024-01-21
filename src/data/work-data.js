@@ -4,8 +4,8 @@ export const data = [
   {
     title: `Epic Legion`,
     description: `Contributed in this Animated website made by an amazing Team of devs I found on a discord server. It is a website showcasing minecraft modpacks by Mark fetched from modrinth and curseforge api`,
-    projectLink: `https://weadher.vercel.app/`,
-    codeLink: "https://github.com/ParallelXL/weather-app",
+    projectLink: `https://markpacks.net/`,
+    codeLink: "https://github.com/epicyeeto/MarkModpacks",
     tags: [`All`, `Best`, `Dynamic`],
     imgname: `epiclegion`,
   },

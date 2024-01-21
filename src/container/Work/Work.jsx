@@ -9,6 +9,7 @@ import { hackerEffect } from "../../constants";
 import "./Work.scss";
 
 const Work = () => {
+  const [isTouchScreen, setIsTouchScreen] = useState(false);
   const [activeFilter, setActiveFilter] = useState("All");
   const [animateCard, setAnimateCard] = useState({ y: 0, opacity: 1 });
   const [filterWork, setFilterWork] = useState([]);
@@ -17,6 +18,20 @@ const Work = () => {
   useEffect(() => {
     setWorks(data);
     setFilterWork(data);
+
+    const handleTouchStart = () => {
+      setIsTouchScreen(true);
+      // Remove the event listener after detecting touch
+      window.removeEventListener("touchstart", handleTouchStart);
+    };
+
+    // Add the event listener
+    window.addEventListener("touchstart", handleTouchStart);
+
+    // Clean up the event listener on component unmount
+    return () => {
+      window.removeEventListener("touchstart", handleTouchStart);
+    };
   }, []);
 
   const handleWorkFilter = (item) => {
@@ -57,14 +72,18 @@ const Work = () => {
         ))}
       </div>
 
-      <motion.div animate={animateCard} transition={{ duration: 0.5, delayChildren: 0.5 }} className="app__work-portfolio">
+      <motion.div
+        animate={animateCard}
+        transition={{ duration: 0.5, delayChildren: 0.5 }}
+        className={`app__work-portfolio ${isTouchScreen ? "onMobile" : ""}`}
+      >
         {filterWork.map((work, index) => (
           <div className="app__work-item app__flex" key={index}>
             <div className="app__work-img">
               <img src={images[work.imgname]} alt={work.name} />
 
               <motion.div
-                whileHover={{ opacity: [0, 1] }}
+                whileHover={!isTouchScreen ? { opacity: [0, 1] } : { opacity: [1, 1] }}
                 transition={{
                   duration: 0.25,
                   ease: "easeInOut",
@@ -74,8 +93,7 @@ const Work = () => {
               >
                 <a href={work.projectLink} target="_blank" rel="noreferrer">
                   <motion.div
-                    whileInView={{ scale: [0, 1] }}
-                    whileHover={{ scale: [1, 0.9] }}
+                    whileHover={{ scale: [1, 0.8] }}
                     transition={{
                       duration: 0.25,
                     }}
@@ -86,8 +104,7 @@ const Work = () => {
                 </a>
                 <a href={work.codeLink} target="_blank" rel="noreferrer">
                   <motion.div
-                    whileInView={{ scale: [0, 1] }}
-                    whileHover={{ scale: [1, 0.9] }}
+                    whileHover={{ scale: [1, 0.8] }}
                     transition={{
                       duration: 0.25,
                     }}
