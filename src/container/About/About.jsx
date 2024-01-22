@@ -11,7 +11,7 @@ const About = () => {
   }, []);
 
   return (
-    <div className="app__about">
+    <div className="app__about" id="about">
       <h2 className="head-text">
         I Know That <span>Good Design</span>
         <br /> Means <span>Good Business</span>

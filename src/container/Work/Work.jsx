@@ -45,7 +45,7 @@ const Work = () => {
   };
 
   return (
-    <section className="app__work">
+    <section className="app__work" id="work">
       <h2 className="head-text hacker-effect">
         My creative{" "}
         <span

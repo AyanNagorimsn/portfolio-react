@@ -58,7 +58,7 @@ const Footer = () => {
   };
 
   return (
-    <div id="contact">
+    <div id="contact" style={{ paddingTop: "6rem" }}>
       <h2 className="head-text">Take a coffee & chat with me</h2>
 
       <div className="app__footer-cards">

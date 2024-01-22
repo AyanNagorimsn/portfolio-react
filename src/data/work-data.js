@@ -11,7 +11,7 @@ export const data = [
   },
   {
     title: `Weather App`,
-    description: `This is my first, old and really simple portfolio. Made from static Html and Css. Inspiration is taken from a WIX template and I made design by myslef in figma. `,
+    description: `Minimal weather app created for learning api and charts. The hardest part was the images of the country for which we searched for. Thanks to dev bello for contributing in some parts of the project.`,
     projectLink: `https://weadher.vercel.app/`,
     codeLink: "https://github.com/ParallelXL/weather-app",
     tags: [`All`, `Best`, `Dynamic`],

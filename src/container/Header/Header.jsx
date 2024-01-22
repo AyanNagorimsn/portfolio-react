@@ -1,15 +1,9 @@
-import React, { useRef, useEffect } from "react";
 import { motion } from "framer-motion";
 import { images } from "../../constants";
 
 import { hackerEffect } from "../../constants";
 import "./Header.scss";
-
-/*\
-import { motion, useScroll } from "framer-motion"
-
-function Component() {
-*/
+import { useRef } from "react";
 
 const scaleVariants = {
   whileInView: {
@@ -23,18 +17,11 @@ const scaleVariants = {
 };
 
 const Header = () => {
-  const firstImage = useRef();
   const name = useRef();
   const heading = useRef();
 
-  useEffect(() => {
-    window.addEventListener("scroll", (e) => {
-      firstImage.current.style.transform = `translate(-50% ,-${window.scrollY * 1.5}px)`;
-    });
-  }, []);
-
   return (
-    <div className="app__header app__flex">
+    <div className="app__header app__flex" id="home">
       <motion.div className="app__header-info" whileInView={{ x: [-100, 0], opacity: [0, 1] }} transition={{ duration: 0.5, delay: 0.2 }}>
         <div className="app__header-badge">
           <div
@@ -61,16 +48,6 @@ const Header = () => {
           </div>
         </div>
       </motion.div>
-
-      {/* -------------------------------- */}
-      {/* -------------------------------- */}
-
-      <motion.div whileInView={{ opacity: [0, 1] }} transition={{ duration: 0.5, delayChildren: 0.2 }} className="app__header-img">
-        <img ref={firstImage} src={images.text} alt="Hero Text" />
-      </motion.div>
-
-      {/* -------------------------------- */}
-      {/* -------------------------------- */}
 
       <motion.div variant={scaleVariants} whileInView={scaleVariants.whileInView} className="app__header-circles">
         {[images.figma, images.react, images.sass].map((circle, index) => (
