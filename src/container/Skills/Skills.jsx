@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 
 // import Tooltip from "react-power-tooltip";
 import { motion } from "framer-motion";
-import { AppWrap } from "../../wrapper";
 import { data } from "../../data/skills-data";
 import { images } from "../../constants";
 import "./Skills.scss";
@@ -15,7 +14,7 @@ const Skills = () => {
   }, []);
 
   return (
-    <section className="skills">
+    <section className="app__skills" id="skills">
       <h2 className="head-text">Skills & Experience</h2>
 
       <div className="app__skills-container">
@@ -28,7 +27,7 @@ const Skills = () => {
               key={skill.name}
             >
               <div className="app__flex" style={{ backgroundColor: skill.bgColor }}>
-                <img src={images[skill.name]} alt={skill.name} />
+                <img src={images[skill.imgName]} alt={skill.name} />
               </div>
               <p className="p-text">{skill.name}</p>
             </motion.div>
@@ -39,4 +38,4 @@ const Skills = () => {
   );
 };
 
-export default AppWrap(Skills, "skills", "app__skills");
+export default Skills;

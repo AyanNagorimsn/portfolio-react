@@ -6,14 +6,6 @@
   background-position: center;
 
   overflow: hidden;
-
-  .app-wrapper {
-    padding: 0;
-
-    .copyright {
-      display: none;
-    }
-  }
 }
 
 .app__header {
@@ -23,6 +15,7 @@
   justify-content: space-between;
   flex-direction: row;
   padding: 6rem 2rem 0;
+  min-height: 100vh;
 
   @media screen and (min-width: 2000px) {
     padding-top: 8rem;
@@ -175,7 +168,7 @@
   -moz-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
-  ////
+
   img {
     width: 220px;
     object-fit: contain;

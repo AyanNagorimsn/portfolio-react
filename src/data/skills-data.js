@@ -1,30 +1,37 @@
 export const data = [
   {
-    name: "sass",
+    name: "Sass",
+    imgName: "sass",
     bgColor: "#F9ACB1",
   },
   {
-    name: "figma",
+    name: "Figma",
+    imgName: "figma",
     bgColor: "#CAF1DE",
   },
   {
-    name: "html",
+    name: "Html",
+    imgName: "html",
     bgColor: "#3297FE",
   },
   {
-    name: "css",
+    name: "CSS",
+    imgName: "css",
     bgColor: "#C8E7F1",
   },
   {
-    name: "javascript",
-    bgColor: "#F7D8BA",
+    name: "Javascript",
+    imgName: "javascript",
+    bgColor: "#291706",
   },
   {
-    name: "react",
+    name: "React",
+    imgName: "react",
     bgColor: "#2f2fa2",
   },
   {
-    name: "git",
-    bgColor: "#CAF1DE",
+    name: "GIT",
+    imgName: "git",
+    bgColor: "rgb(176 174 255)",
   },
 ];

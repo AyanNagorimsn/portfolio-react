@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { images } from "../../constants";
 import { data } from "../../data/about-data";
-import { AppWrap } from "../../wrapper";
 import "./About.scss";
 
 const About = () => {
@@ -41,4 +40,4 @@ const About = () => {
   );
 };
 
-export default AppWrap(About, "about");
+export default About;

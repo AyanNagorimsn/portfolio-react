@@ -1,6 +1,5 @@
 import React, { useRef } from "react";
 import { images } from "../../constants";
-import { AppWrap } from "../../wrapper";
 import { Tooltip as ReactTooltip } from "react-tooltip";
 import emailjs from "@emailjs/browser";
 
@@ -46,21 +45,14 @@ const Footer = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm(
-        "service_08e1xne",
-        "template_sep0juh",
-        form.current,
-        "U_tYrZipx3KkdmfHb"
-      )
-      .then(
-        (result) => {
-          console.log(result);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+    emailjs.sendForm("service_08e1xne", "template_sep0juh", form.current, "U_tYrZipx3KkdmfHb").then(
+      (result) => {
+        console.log(result);
+      },
+      (error) => {
+        console.log(error.text);
+      }
+    );
 
     e.target.reset();
   };
@@ -79,14 +71,9 @@ const Footer = () => {
               data-tooltip-id="tooltip"
               onClick={(e) => copyText(e)}
             >
-              <img
-                src={images[el === "mobile" ? "mobile" : "email"]}
-                alt={el}
-              />
+              <img src={images[el === "mobile" ? "mobile" : "email"]} alt={el} />
               <h6 className="p-text btn-copy">
-                <p>
-                  {el === "mobile" ? "91+ 9870699786" : "ayanmsn07@gmail.com"}
-                </p>
+                <p>{el === "mobile" ? "91+ 9870699786" : "ayanmsn07@gmail.com"}</p>
                 <span>Text Copied!</span>
               </h6>
 
@@ -103,40 +90,18 @@ const Footer = () => {
             </div>
           );
         })}
-        <ReactTooltip
-          styles={{ position: "absolute", top: 0, left: 0 }}
-          id="tooltip"
-        ></ReactTooltip>
+        <ReactTooltip styles={{ position: "absolute", top: 0, left: 0 }} id="tooltip"></ReactTooltip>
       </div>
 
-      <form
-        ref={form}
-        onSubmit={sendEmail}
-        className="app__footer-form app__flex"
-      >
+      <form ref={form} onSubmit={sendEmail} className="app__footer-form app__flex">
         <div className="app__flex">
-          <input
-            className="p-text"
-            type="text"
-            placeholder="Your Name"
-            name="from_name"
-          />
+          <input className="p-text" type="text" placeholder="Full Name" name="from_name" />
         </div>
         <div className="app__flex">
-          <input
-            className="p-text"
-            type="email"
-            placeholder="Your Email"
-            name="from_email"
-          />
+          <input className="p-text" type="email" placeholder="Your Email" name="from_email" />
         </div>
         <div>
-          <textarea
-            className="p-text"
-            placeholder="Your Message"
-            name="message"
-            style={{ resize: "none", height: "100px" }}
-          />
+          <textarea className="p-text" placeholder="Your Message" name="message" />
         </div>
         <button type="submit" className="p-text">
           Send message
