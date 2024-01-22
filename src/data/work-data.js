@@ -1,5 +1,3 @@
-// {["All", "Best", "Dynamic", "Static"].map((item, index) => (
-
 export const data = [
   {
     title: `Epic Legion`,
