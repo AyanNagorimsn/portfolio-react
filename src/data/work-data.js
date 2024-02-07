@@ -1,9 +1,7 @@
-// {["All", "Best", "Dynamic", "Static"].map((item, index) => (
-
 export const data = [
   {
     title: `Epic Legion`,
-    description: `Contributed in this Animated website made by an amazing Team of devs I found on a discord server. It is a website showcasing minecraft modpacks by Mark fetched from modrinth and curseforge api`,
+    description: `Contributed to an animated website showcasing Minecraft modpacks. Collaborated with an amazing team of devs from a Discord server. Utilized modrinth and curseforge APIs.`,
     projectLink: `https://markpacks.net/`,
     codeLink: "https://github.com/epicyeeto/MarkModpacks",
     tags: [`All`, `Best`, `Dynamic`],
@@ -11,7 +9,7 @@ export const data = [
   },
   {
     title: `Weather App`,
-    description: `Minimal weather app created for learning api and charts. The hardest part was the images of the country for which we searched for. Thanks to dev bello for contributing in some parts of the project.`,
+    description: `Created a minimal weather app for learning APIs and charts. Overcame challenges in fetching images of countries. Special thanks to dev bello for contributing.`,
     projectLink: `https://weadher.vercel.app/`,
     codeLink: "https://github.com/ParallelXL/weather-app",
     tags: [`All`, `Best`, `Dynamic`],
@@ -19,7 +17,7 @@ export const data = [
   },
   {
     title: `Saleslancer`,
-    description: `Simple landing page website inspired by a dribbble shot by DS Studio. Added animation and dark mode for a bit of personal touch.`,
+    description: `Developed a simple landing page inspired by a Dribbble shot from DS Studio. Added animations and a dark mode for a personal touch.`,
     projectLink: `https://saleslancer-landing-page.vercel.app/`,
     codeLink: "https://github.com/ParallelXL/Landing-page-UI",
     tags: [`All`, `Static`],
@@ -27,7 +25,7 @@ export const data = [
   },
   {
     title: `Old Portfolio`,
-    description: `This is my first, old and really simple portfolio. Made from static Html and Css. Inspiration is taken from a WIX template and I made design by myslef in figma. `,
+    description: `Crafted my first, old, and simple portfolio using static HTML and CSS. Inspired by a WIX template, and designed in Figma.`,
     projectLink: `https://ayannagori-oldfolio.vercel.app`,
     codeLink: "https://github.com/ParallelXL/old-portfolio",
     tags: [`All`, `Static`],
@@ -35,7 +33,7 @@ export const data = [
   },
   {
     title: `Logify`,
-    description: `This is a website I create for my first client. Which I get When I was Freelancing on truelancer.com, the design is quite similar to stripe.com. Made from static Html and Css`,
+    description: `Developed a website for my first client on Truelancer.com. The design is reminiscent of stripe.com, created with static HTML and CSS.`,
     projectLink: `https://logify.id`,
     codeLink: "https://github.com/ParallelXL/logify-website",
     tags: [`All`, `Static`],
@@ -43,7 +41,7 @@ export const data = [
   },
   {
     title: `Bankist`,
-    description: `This is a minimal finance themes website. I made this when I was learning a course from udemy. the course and design is by jonasschmedtmann.`,
+    description: `Designed a minimal finance-themed website while learning from a Udemy course by jonasschmedtmann. Implemented interactive elements for a seamless user experience.`,
     projectLink: `https://minimal-bankist.vercel.app/`,
     codeLink: `https://github.com/ParallelXL/bankist-website`,
     tags: [`All`, `Static`],
@@ -51,7 +49,7 @@ export const data = [
   },
   {
     title: `Guess The Number`,
-    description: `This is a javascript game in which the player has to guess the number which is randomly generated between 1 to 20. the course and design is by jonasschmedtmann.`,
+    description: `Developed a JavaScript game where players guess a randomly generated number between 1 to 20. Inspired by a course and design by jonasschmedtmann.`,
     projectLink: `https://mysterydigit.vercel.app/`,
     codeLink: `https://github.com/ParallelXL/Guess-The-Number`,
     tags: [`All`, `Dynamic`],
@@ -59,7 +57,7 @@ export const data = [
   },
   {
     title: `Pick Game`,
-    description: `This is a 2 player javascript game. The goal is to make 100 points before your opponent player. And that by Rolling dice. If the dice number is 1 then you will lose your all your current points.`,
+    description: `Created a 2-player JavaScript game where the goal is to reach 100 points by rolling dice. Be cautious, rolling a 1 resets your current points.`,
     projectLink: `https://pick-game.vercel.app/`,
     codeLink: `https://github.com/ParallelXL/Pick-Game-Javascript`,
     tags: [`All`, `Dynamic`],
