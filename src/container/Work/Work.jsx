@@ -3,7 +3,6 @@ import { AiFillEye, AiFillGithub } from "react-icons/ai";
 import { motion } from "framer-motion";
 import { images } from "../../constants";
 import { data } from "../../data/work-data";
-import { hackerEffect } from "../../constants";
 
 import "./Work.scss";
 
@@ -47,16 +46,7 @@ const Work = () => {
   return (
     <section className="app__work" id="work">
       <h2 className="head-text hacker-effect">
-        My creative{" "}
-        <span
-          data-text="Portfolio"
-          onMouseOver={(e) => {
-            hackerEffect(e);
-          }}
-        >
-          Portfolio
-        </span>{" "}
-        section
+        My creative <span>Portfolio</span> section
       </h2>
 
       <div className="app__work-filter">
@@ -64,7 +54,9 @@ const Work = () => {
           <div
             key={index}
             onClick={() => handleWorkFilter(item)}
-            className={`app__work-filter-item app__flex p-text ${activeFilter === item ? "item-active" : ""}`}
+            className={`app__work-filter-item app__flex p-text ${
+              activeFilter === item ? "item-active" : ""
+            }`}
           >
             {item}
           </div>
@@ -121,7 +113,11 @@ const Work = () => {
                 {work.description}
               </p>
 
-              <div className={`app__work-tag app__flex ${work.tags?.[1] === "Best" ? "highlight" : ""}`}>
+              <div
+                className={`app__work-tag app__flex ${
+                  work.tags?.[1] === "Best" ? "highlight" : ""
+                }`}
+              >
                 <p className="p-text">{work.tags.length > 1 ? work.tags[1] : work.tags[0]}</p>
               </div>
             </div>

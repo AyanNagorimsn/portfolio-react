@@ -3,14 +3,22 @@ import React, { useState } from "react";
 import { HiMenuAlt4, HiX } from "react-icons/hi";
 import "./Navbar.scss";
 import { images } from "../../constants";
-import { color } from "framer-motion";
 
 const Navbar = () => {
+  const [imageSrc, setImageSrc] = useState("font8");
   const [toggle, setToggle] = useState(false);
+
+  const handleLogo = () => {
+    let curImageIndex = Number(imageSrc.charAt(4));
+    console.log(imageSrc, curImageIndex, curImageIndex + 1);
+    setImageSrc(curImageIndex === 8 ? `font1` : `font${curImageIndex + 1}`);
+    console.log(imageSrc, curImageIndex, curImageIndex + 1);
+  };
+
   return (
     <nav className="app__navbar">
       <a href="#home" className="app__navbar-logo">
-        <img src={images.logoLight} alt="LOGO" />
+        <img onMouseOver={handleLogo} src={images[imageSrc]} alt="LOGO" />
       </a>
       <ul className="app__navbar-links">
         {["home", "about", "work", "skills", "contact"].map((item) => (
