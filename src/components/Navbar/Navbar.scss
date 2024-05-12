@@ -6,9 +6,9 @@
   align-items: center;
 
   padding: 0.4rem 2rem;
-  background: rgba(255, 255, 255, 0.25);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(22px);
+  -webkit-backdrop-filter: blur(22px);
   z-index: 99;
   position: fixed;
 }
@@ -26,6 +26,7 @@
 .app__navbar-links {
   display: flex;
   align-items: center;
+  justify-content: center;
   flex: 1;
   list-style-type: none;
   margin-left: 2rem;

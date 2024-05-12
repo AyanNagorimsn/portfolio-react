@@ -14,14 +14,6 @@ import about03 from "../assets/about03.png";
 import about04 from "../assets/about04.png";
 
 import circle from "../assets/circle.svg";
-import font1 from "../assets/font1.png";
-import font2 from "../assets/font2.png";
-import font3 from "../assets/font3.png";
-import font4 from "../assets/font4.png";
-import font5 from "../assets/font5.png";
-import font6 from "../assets/font6.png";
-import font7 from "../assets/font7.png";
-import font8 from "../assets/font8.png";
 
 import bankist from "../assets/bankist.png";
 import pickgame from "../assets/pickgame.png";
@@ -55,12 +47,4 @@ export default {
   about03,
   about04,
   circle,
-  font1,
-  font2,
-  font3,
-  font4,
-  font5,
-  font6,
-  font7,
-  font8,
 };
