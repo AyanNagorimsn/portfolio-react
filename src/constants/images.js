@@ -13,6 +13,7 @@ import about02 from "../assets/about02.png";
 import about03 from "../assets/about03.png";
 import about04 from "../assets/about04.png";
 
+import heroImage from "../assets/heroImage.png";
 import circle from "../assets/circle.svg";
 
 import bankist from "../assets/bankist.png";
@@ -47,4 +48,5 @@ export default {
   about03,
   about04,
   circle,
+  heroImage,
 };

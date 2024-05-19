@@ -1,9 +1,10 @@
+import { useRef } from "react";
 import { motion } from "framer-motion";
 import { images } from "../../constants";
 
 import { hackerEffect } from "../../constants";
+import HeroCenter from "../../components/HeroCenter";
 import "./Header.scss";
-import { useRef } from "react";
 
 const scaleVariants = {
   whileInView: {
@@ -21,9 +22,14 @@ const Header = () => {
   const heading = useRef();
 
   return (
-    <div className="app__header app__flex" id="home">
-      <motion.div className="app__header-info" whileInView={{ x: [-100, 0], opacity: [0, 1] }} transition={{ duration: 0.5, delay: 0.2 }}>
-        <div className="app__header-badge">
+    <div className="app__header " id="home">
+      <header className="app__flex">
+        <HeroCenter />
+        <motion.div
+          className="app__header-info"
+          whileInView={{ x: [-100, 0], opacity: [0, 1] }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+        >
           <div
             className="badge-cmp app-flex"
             onMouseEnter={() => {
@@ -46,16 +52,19 @@ const Header = () => {
             <p className="p-text">Web Developer</p>
             <p className="p-text">FreeLancer</p>
           </div>
-        </div>
-      </motion.div>
-
-      <motion.div variant={scaleVariants} whileInView={scaleVariants.whileInView} className="app__header-circles">
-        {[images.figma, images.react, images.sass].map((circle, index) => (
-          <div className="circle-cmp app__flex" key={`circle-${index}`}>
-            <img src={circle} alt="circle" />
-          </div>
-        ))}
-      </motion.div>
+        </motion.div>
+        <motion.div
+          variant={scaleVariants}
+          whileInView={scaleVariants.whileInView}
+          className="app__header-circles"
+        >
+          {[images.figma, images.react, images.sass].map((circle, index) => (
+            <div className="circle-cmp app__flex" key={`circle-${index}`}>
+              <img src={circle} alt="circle" />
+            </div>
+          ))}
+        </motion.div>
+      </header>
     </div>
   );
 };
