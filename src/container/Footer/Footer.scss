@@ -1,3 +1,7 @@
+#contact .head-text {
+  max-width: 95%;
+}
+
 .app__footer-cards {
   width: 60%;
   display: flex;
@@ -8,6 +12,7 @@
 
   .app__footer-card {
     min-width: 290px;
+    max-width: 90%;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
