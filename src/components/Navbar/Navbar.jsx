@@ -14,7 +14,6 @@ const Navbar = () => {
       <ul className="app__navbar-links">
         {["home", "about", "work", "skills", "contact"].map((item) => (
           <li className="app__flex p-text" key={`link-${item}`}>
-            <div></div>
             <a onClick={() => lenis.scrollTo(`#${item}`)} href={`#${item}`}>
               {item}
             </a>
@@ -31,8 +30,13 @@ const Navbar = () => {
           <ul>
             {["home", "about", "work", "skills", "contact"].map((item) => (
               <li key={item}>
-                <div></div>
-                <a href={`#${item}`} onClick={() => setToggle(false)}>
+                <a
+                  onClick={() => {
+                    lenis.scrollTo(`#${item}`);
+
+                    setToggle(false);
+                  }}
+                >
                   {item}
                 </a>
               </li>

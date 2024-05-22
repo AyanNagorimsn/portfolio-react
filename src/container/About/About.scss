@@ -13,6 +13,12 @@
   align-items: flex-start;
   flex-wrap: wrap;
   margin-top: 2rem;
+  gap: 2rem;
+
+  @media screen and (max-width: 500px) {
+    gap: 8vh 0;
+    justify-content: space-evenly;
+  }
 }
 
 .app__profile-item {
@@ -21,7 +27,6 @@
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: column;
-  margin: 2rem;
 
   img {
     width: 100%;
@@ -37,5 +42,8 @@
     img {
       height: 320px;
     }
+  }
+  @media screen and (max-width: 500px) {
+    width: 45%;
   }
 }
