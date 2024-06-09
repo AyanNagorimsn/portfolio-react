@@ -72,7 +72,7 @@ const Footer = () => {
             >
               <img src={images[el]} alt={el} />
               <h6 className="p-text btn-copy">
-                <p>{el === "mobile" ? "91+ 9870699786" : "ayanmsn07@gmail.com"}</p>
+                <p>{el === "mobile" ? "91+ 9870699786" : "ayannagorimsn@gmail.com"}</p>
                 <span>Text Copied!</span>
               </h6>
 
