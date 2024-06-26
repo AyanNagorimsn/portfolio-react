@@ -10,7 +10,7 @@ const Modal = ({ isOpen, setIsOpen }) => {
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           onClick={() => setIsOpen(false)}
-          className="fixed inset-0 z-50 flex cursor-pointer items-center justify-center !bg-transparent backdrop-blur-sm"
+          className="fixed inset-0 z-50 flex cursor-pointer items-center justify-center !bg-transparent backdrop-blur-sm max-w-[97]"
         >
           <motion.div
             initial={{ scale: 0, rotate: "12.5deg" }}
