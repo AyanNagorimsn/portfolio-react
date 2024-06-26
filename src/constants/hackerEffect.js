@@ -14,7 +14,7 @@ const hackerEffect = ({ target: element }) => {
     if (iteration > element.innerText.length) clearInterval(interval);
 
     iteration += 1 / 2;
-  }, 45);
+  }, 60);
 };
 
 export default hackerEffect;
