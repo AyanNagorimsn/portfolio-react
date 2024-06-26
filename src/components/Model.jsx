@@ -10,14 +10,14 @@ const Modal = ({ isOpen, setIsOpen }) => {
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           onClick={() => setIsOpen(false)}
-          className="fixed inset-0 z-50 flex cursor-pointer items-center justify-center !bg-transparent backdrop-blur-sm max-w-[97]"
+          className="fixed inset-0 z-50 flex cursor-pointer items-center justify-center !bg-transparent backdrop-blur-sm"
         >
           <motion.div
             initial={{ scale: 0, rotate: "12.5deg" }}
             animate={{ scale: 1, rotate: "0deg" }}
             exit={{ scale: 0, rotate: "0deg" }}
             onClick={(e) => e.stopPropagation()}
-            className="relative w-full max-w-lg cursor-default rounded-lg bg-gradient-to-br from-violet-600 to-indigo-600 p-6 shadow-xl"
+            className="relative w-full max-w-lg cursor-default rounded-lg bg-gradient-to-br from-violet-600 to-indigo-600 p-6 shadow-xl max-w-[97]"
           >
             <FiAlertCircle className="absolute -left-24 -top-24 -z-[1] rotate-12 stroke-white/30 text-[250px]" />
             <div className="rounded-lg bg-white p-2">
