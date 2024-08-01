@@ -44,8 +44,8 @@ const Header = () => {
           <div className="badge-cmp app-flex">
             <span>👋</span>
             <div style={{ marginLeft: 20 }}>
-              <p className="p-text" ref={heading} data-text="Hello, I'am">
-                Hello, I'am
+              <p className="p-text" ref={heading} data-text="Hello, I am">
+                Hello, I am
               </p>
               <h1
                 className="head-text leading-none"

@@ -20,7 +20,7 @@ const HeroCenter = () => {
       </h1>
 
       <motion.img
-        whileInView={{ opacity: [0, 1] }}
+        whileInView={{ opacity: [0, 0.7] }}
         transition={{ duration: 0.4, delay: 2 }}
         viewport={{ once: true, amount: "all" }}
         src="https://res.cloudinary.com/jasuaje/image/upload/v1715387111/0bf6e60dfc83a40fd27549c98ac8a55f.png"
