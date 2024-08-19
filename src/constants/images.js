@@ -24,8 +24,10 @@ import guessthenum from "../assets/guessthenum.png";
 import weather from "../assets/weather.png";
 import saleslancer from "../assets/saleslancer.png";
 import epiclegion from "../assets/epiclegion.png";
+import threeportfolio from "../assets/threeportfolio.png";
 
 export default {
+  threeportfolio,
   saleslancer,
   epiclegion,
   weather,

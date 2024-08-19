@@ -16,6 +16,15 @@ export const data = [
     imgname: `weather`,
   },
   {
+    title: `Threejs Portfolio`,
+    description:
+      "Created as a learning project using React Three Fiber for 3D models. The website displayed on the laptop is this portfolio.",
+    projectLink: `https://ayannagoribut3d.vercel.app/`,
+    codeLink: "https://github.com/AyanNagorimsn/PortfolioBut3D",
+    tags: [`All`, `Best`, `static`],
+    imgname: `threeportfolio`,
+  },
+  {
     title: `Old Portfolio`,
     description: `Crafted my first, old, and simple portfolio using static HTML and CSS. Inspired by a WIX template, and designed in Figma.`,
     projectLink: `https://ayannagori-oldfolio.vercel.app`,
