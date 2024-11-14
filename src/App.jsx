@@ -24,7 +24,7 @@ const App = () => {
 
   useEffect(() => {
     if (!isHeaderInView) return;
-    setCurrentSection("Header");
+    setCurrentSection("Home");
   }, [isHeaderInView]);
 
   useEffect(() => {

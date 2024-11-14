@@ -14,7 +14,7 @@ const Skills = () => {
   }, []);
 
   return (
-    <section className="app__skills relative h-[105vh]" id="skills">
+    <section className="app__skills relative" id="skills">
       <motion.div
         whileInView={{ height: ["100%", "0%"] }}
         transition={{
