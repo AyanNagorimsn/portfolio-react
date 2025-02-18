@@ -7,6 +7,7 @@ import html from "../assets/html.png";
 import javascript from "../assets/javascript.png";
 import react from "../assets/react.png";
 import sass from "../assets/sass.png";
+import nextjs from "../assets/nextjs.png";
 
 import about01 from "../assets/about01.png";
 import about02 from "../assets/about02.png";
@@ -38,6 +39,7 @@ export default {
   guessthenum,
   email,
   mobile,
+  nextjs,
   css,
   figma,
   git,

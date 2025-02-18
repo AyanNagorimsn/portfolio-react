@@ -11,7 +11,7 @@ const ScrollFitText = ({ currentSection }) => {
         className="absolute bottom-0 left-0 mx-auto overflow-hidden"
       >
         <AnimatePresence>
-          <span className="whitespace-nowrap text-center text-[10rem] font-bold uppercase leading-[0.8] text-secondary">
+          <span className="whitespace-nowrap text-center text-[7rem] font-bold uppercase leading-[0.8] text-secondary">
             {currentSection}
           </span>
         </AnimatePresence>

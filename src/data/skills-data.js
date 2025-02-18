@@ -7,12 +7,12 @@ export const data = [
   {
     name: "Figma",
     imgName: "figma",
-    bgColor: "#CAF1DE",
+    bgColor: "#a7e1c5",
   },
   {
     name: "Html",
     imgName: "html",
-    bgColor: "#3297FE",
+    bgColor: "#aa97FE",
   },
   {
     name: "CSS",
@@ -30,8 +30,13 @@ export const data = [
     bgColor: "#2f2fa2",
   },
   {
+    name: "Nextjs",
+    imgName: "nextjs",
+    bgColor: "#ededed",
+  },
+  {
     name: "GIT",
     imgName: "git",
-    bgColor: "rgb(176 174 255)",
+    bgColor: "#a5dcee",
   },
 ];
